@@ -130,7 +130,7 @@ nav ul li a{
 /* page-2 */
 
 .page-2{
-    height: 100dvh;
+    height: auto;
     width: 100%;
     background-color: white;
 }
@@ -190,7 +190,7 @@ nav ul li a{
 /* page-3 */
 
 .page-3{
-    height: 100vh;
+    height: auto;
     width: 100%;
 }
 
@@ -200,7 +200,7 @@ nav ul li a{
     width: 100%;
 }
 
-  .swiper-slide {
+.swiper-slide {
     text-align: center;
     font-size: 18px;
     background: #fff;
@@ -209,7 +209,7 @@ nav ul li a{
     align-items: center;
 }
     
-    .swiper-slide img {
+.swiper-slide img {
     display: block;
     width: 90%;
     height: 90vh;
@@ -217,7 +217,81 @@ nav ul li a{
     border-radius: 1vw;
 }
 
+/* page-4 */
 
+.page-4{
+    height: 100vh;
+    width: 100%;
+}
+
+.page-4-inner-div{
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+}
+
+.page-4-inner-div .intro{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.page-4-inner-div .intro :nth-child(1){
+    letter-spacing: -3px;
+    font-size: 4vw;
+    color: #000;
+    margin: auto;
+}
+
+.page-4-inner-div .intro :nth-child(3){
+    font-size: 3vw;
+    color: #0006;
+    margin: auto;
+}
+
+.page-4-inner-div .as-seen-in{
+    display: flex;
+    margin: auto;
+    background-color:#F5F5EF;
+    padding: 20px;
+    border-radius: 1vw;
+    margin-bottom: 6vw;
+}
+
+.page-4-inner-div .as-seen-in p{
+    color: #B8B8B3;
+    font-size: 1.2vw;
+    margin: auto;
+}
+
+.page-4-inner-div .as-seen-in img{
+    height: 1.5vw;
+    margin: 1vw;
+}
+
+.samara-boxes{
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+}
+
+
+.samara-boxes .box-1 .box-1-para, .box-2-para{
+    position: absolute;
+    margin: 1vw;
+}
+
+.samara-boxes .box-1 img, .box-2 video{
+    width: 40vw;
+    height: 25vw;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.samara-boxes .box-para p{
+    font-size: 2vw;
+    color: white;
+}
 /* responsive */
 
 @media (max-width: 768px) {
@@ -323,4 +397,46 @@ nav ul li a{
         height: 60vh;
         border-radius: 2vw;
       }
+
+    /* page-4 */
+
+    .page-4{
+        padding: 10vw 0vw;
+    }
+
+    .page-4-inner-div .intro :nth-child(1) {
+        font-size: 6vw;
+    }
+
+    .page-4-inner-div .intro :nth-child(3) {
+        font-size: 5vw;
+    }
+
+    .page-4-inner-div .as-seen-in img {
+        height: 3vw;
+    }
+
+    .page-4-inner-div .as-seen-in p {
+        font-size: 2.5vw;
+    }
+
+    .samara-boxes {
+        display: flex;
+        flex-direction: column;
+        gap: 3vw;
+    }
+
+    .samara-boxes .box-1, .box-2{
+        margin: auto;
+    }
+    .samara-boxes .box-1 img, .box-2 video{
+        width: 95vw;
+        height: 50vw;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+
+    .samara-boxes .box-para p {
+        font-size: 4vw;
+    }
   }
