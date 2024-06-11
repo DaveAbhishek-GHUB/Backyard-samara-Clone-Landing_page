@@ -112,6 +112,7 @@ nav ul li a{
     color: white;
     font-size: 1vw;
     font-family: "Poppins", sans-serif;
+    border: none;
 }
 
 .center-text .info-text p{
@@ -186,9 +187,43 @@ nav ul li a{
     padding: 0vw 1vw;
 }
 
+/* page-3 */
+
+.page-3{
+    height: 100vh;
+    width: 100%;
+}
+
+/* slider */
+
+.page-2-inner-div{
+    width: 100%;
+}
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+    .swiper-slide img {
+    display: block;
+    width: 90%;
+    height: 90vh;
+    object-fit: cover;
+    border-radius: 1vw;
+}
+
+
 /* responsive */
 
 @media (max-width: 768px) {
+
+    /* page-1 */
+
     .center{
         flex-direction: column;
         width: 100%;
@@ -242,7 +277,13 @@ nav ul li a{
         font-size: 3vw;
         border: #33ABF9;
     }
+
+    /* page-2 */
     
+    .page-2{
+        height: auto;
+    }
+
     .page-2 .main-text span{
         font-size: 8vw;
         line-height: 8vw;
@@ -274,6 +315,12 @@ nav ul li a{
         font-size: 3vw;
         padding: 0vw 0vw;
     }
-    
-    
+
+    /* page-3 */
+
+    .swiper-slide img {
+        width: 90%;
+        height: 60vh;
+        border-radius: 2vw;
+      }
   }
