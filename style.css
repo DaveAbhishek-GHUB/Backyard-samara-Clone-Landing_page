@@ -536,7 +536,7 @@ nav ul li a {
 
     .page-4-inner-div .intro :nth-child(1) {
         font-size: 6.5vw;
-        /* letter-spacing: -3px; */
+        letter-spacing: -2px;
     }
 
     .page-4-inner-div .intro :nth-child(3) {
