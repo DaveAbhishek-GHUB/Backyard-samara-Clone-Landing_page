@@ -1,27 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-html, body {
-  height: 100%;
-  width: 100%;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 /* page-1 */
 
-.page-1{
+.page-1 {
     width: 100%;
     background-color: black;
 }
 
 /* navbar */
 
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,15 +32,15 @@ nav{
     z-index: 99;
 }
 
-nav .logo img{
+nav .logo img {
     filter: invert(1);
 }
 
-nav ul li{
+nav ul li {
     list-style-type: none;
 }
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
     color: white;
     padding: 12px;
@@ -47,7 +48,7 @@ nav ul li a{
     font-size: 1.2vw;
 }
 
-.nav-button{
+.nav-button {
     color: white;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: #33ABF9;
@@ -55,16 +56,16 @@ nav ul li a{
     border-radius: 2em;
 }
 
-.nav-button p{
+.nav-button p {
     font-size: 1.2vw;
 }
 
-.center{
+.center {
     width: 100%;
     display: flex;
 }
 
-.center-text{
+.center-text {
     width: 45%;
     display: flex;
     flex-direction: column;
@@ -72,40 +73,42 @@ nav ul li a{
     padding: 2vw 1vw;
 }
 
-.center-text .intro-text{
+.center-text .intro-text {
     display: flex;
     justify-content: center;
 }
 
-.center-text .intro-text p{
+.center-text .intro-text p {
     font-size: 2.55vw;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     line-height: 1.2;
 }
 
-.center-text .XL{
+.center-text .XL {
     display: flex;
     justify-content: center;
-    }
-    
-.center-text .XL p{
-    font-size: 27.5vw;;
-    line-height: 0.9em;
-    
 }
 
-.center-text .info-text{
+.center-text .XL p {
+    font-size: 27.5vw;
+    ;
+    line-height: 0.9em;
+
+}
+
+.center-text .info-text {
     display: flex;
     justify-content: center;
     padding: 12px;
     font-family: "Poppins", sans-serif;
 }
 
-.center .button{
+.center .button {
     padding: 0vw 10vw;
 }
-.center .button button{
+
+.center .button button {
     padding: 1vw;
     border-radius: 1vw;
     background-color: #33ABF9;
@@ -115,88 +118,89 @@ nav ul li a{
     border: none;
 }
 
-.center-text .info-text p{
-    font-size:1.5vw;
+.center-text .info-text p {
+    font-size: 1.5vw;
 }
 
-.center-image{
+.center-image {
     width: 55%;
     padding: 2vw;
 }
 
-.center-image img{
+.center-image img {
     width: 100%;
 }
+
 /* page-2 */
 
-.page-2{
+.page-2 {
     height: auto;
     width: 100%;
     background-color: white;
 }
 
-.page-2 .main-text span{
+.page-2 .main-text span {
     font-size: 6vw;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     line-height: 6vw;
 }
 
-.page-2 .main-text{
+.page-2 .main-text {
     display: flex;
     justify-content: center;
     padding: 60px 0vw;
 }
 
-.page-2 .main-text img{
+.page-2 .main-text img {
     height: 5vw;
     position: relative;
     top: 1vw;
     margin: 0vw -3vw;
 }
 
-.page-2 .we-handle-everything{
+.page-2 .we-handle-everything {
     display: flex;
     flex-direction: column;
     padding: 0vw 15vw;
 }
 
-.page-2 .we-handle-everything .WHE-1 p{
+.page-2 .we-handle-everything .WHE-1 p {
     font-size: 2.5vw;
     font-family: "Poppins", sans-serif;
 }
 
-.page-2 .we-handle-everything .WHE-2 p{
+.page-2 .we-handle-everything .WHE-2 p {
     font-size: 2.5vw;
     font-family: "Poppins", sans-serif;
     color: #0006;
 }
 
-.page-2 .where-to-build{
+.page-2 .where-to-build {
     display: flex;
     padding: 2vw 15vw;
 }
 
-.page-2 .where-to-build :nth-child(1){
-    font-size:1.2vw;
+.page-2 .where-to-build :nth-child(1) {
+    font-size: 1.2vw;
     color: #0006;
 }
 
-.page-2 .where-to-build :nth-child(2){
-    font-size:1.2vw;
+.page-2 .where-to-build :nth-child(2) {
+    font-size: 1.2vw;
     color: #0009;
     padding: 0vw 1vw;
 }
 
 /* page-3 */
 
-.page-3{
+.page-3 {
     height: auto;
     width: 100%;
 }
 
 /* slider */
 
-.page-2-inner-div{
+.page-2-inner-div {
     width: 100%;
 }
 
@@ -208,8 +212,8 @@ nav ul li a{
     justify-content: center;
     align-items: center;
 }
-    
-.swiper-slide img {
+
+.page-3 .swiper-slide img {
     display: block;
     width: 90%;
     height: 90vh;
@@ -219,82 +223,84 @@ nav ul li a{
 
 /* page-4 */
 
-.page-4{
+.page-4 {
     height: auto;
     width: 100%;
     padding: 4vw 0vw;
 }
 
-.page-4-inner-div{
+.page-4-inner-div {
     display: flex;
     flex-direction: column;
     gap: 3vw;
 }
 
-.page-4-inner-div .intro{
+.page-4-inner-div .intro {
     display: flex;
     flex-direction: column;
     margin: auto;
 }
 
-.page-4-inner-div .intro :nth-child(1){
+.page-4-inner-div .intro :nth-child(1) {
     letter-spacing: -3px;
     font-size: 4vw;
     color: #000;
     margin: auto;
 }
 
-.page-4-inner-div .intro :nth-child(3){
+.page-4-inner-div .intro :nth-child(3) {
     font-size: 3vw;
     color: #0006;
     margin: auto;
 }
 
-.page-4-inner-div .as-seen-in{
+.page-4-inner-div .as-seen-in {
     display: flex;
     margin: auto;
-    background-color:#F5F5EF;
+    background-color: #F5F5EF;
     padding: 20px;
     border-radius: 1vw;
     margin-bottom: 6vw;
 }
 
-.page-4-inner-div .as-seen-in p{
+.page-4-inner-div .as-seen-in p {
     color: #B8B8B3;
     font-size: 1.2vw;
     margin: auto;
 }
 
-.page-4-inner-div .as-seen-in img{
+.page-4-inner-div .as-seen-in img {
     height: 1.5vw;
     margin: 1vw;
 }
 
-.samara-boxes{
+.samara-boxes {
     display: flex;
     justify-content: center;
     gap: 3vw;
 }
 
 
-.samara-boxes .box-1 .box-1-para, .box-2-para{
+.samara-boxes .box-1 .box-1-para,
+.box-2-para {
     position: absolute;
     margin: 1vw;
 }
 
-.samara-boxes .box-1 img, .box-2 video{
+.samara-boxes .box-1 img,
+.box-2 video {
     width: 40vw;
     height: 25vw;
     object-fit: cover;
     border-radius: 12px;
 }
 
-.samara-boxes .box-para p{
+.samara-boxes .box-para p {
     font-size: 2vw;
     color: white;
 }
 
-.page-4-inner-div .page-4-bottomText{
+.page-4-inner-div .page-4-bottomText {
     display: flex;
     gap: 0.5vw;
     justify-content: center;
@@ -305,14 +311,14 @@ nav ul li a{
 }
 
 .page-4-inner-div .page-4-bottomText :nth-child(2) {
-        font-size: 3.5vw;
-        color: #BEBEB9;
-        font-family: "Poppins", sans-serif;
+    font-size: 3.5vw;
+    color: #BEBEB9;
+    font-family: "Poppins", sans-serif;
 }
 
 /* page-5 */
 
-.page-5{
+.page-5 {
     height: auto;
     width: 100%;
 }
@@ -322,12 +328,12 @@ nav ul li a{
     height: 25vw;
 }
 
-.second-swiper-slide img{
+.second-swiper-slide img {
     height: 20vw;
     position: absolute;
 }
 
-.swiper-2-slid-1-colors{
+.swiper-2-slid-1-colors {
     height: 4vw;
     display: flex;
     justify-content: center;
@@ -335,7 +341,7 @@ nav ul li a{
     gap: 1vw;
 }
 
-.swiper-2-slid-1-colors div{
+.swiper-2-slid-1-colors div {
     height: 2vw;
     width: 2vw;
     border-radius: 50%;
@@ -345,11 +351,15 @@ nav ul li a{
     white-space: nowrap;
 }
 
-.swiper-2-slid-1-colors .color-box-420-1{
+.swiper-2-slid-1-colors .color-box-420-1 {
     background-color: #F6F7F5;
 }
 
-.swiper-2-slid-1-colors .color-box-420-1 p{
+.swiper-2-slid-1-colors .color-box-420-1 p,
+.color-box-420-2 p,
+.color-box-420-3 p,
+.color-box-420-4 p,
+.color-box-420-5 p {
     position: absolute;
     top: -1.7vw;
     left: -1.5vw;
@@ -360,20 +370,24 @@ nav ul li a{
     color: #91918c;
 }
 
-.swiper-2-slid-1-colors .color-box-420-2{
+.swiper-2-slid-1-colors .color-box-420-2 {
     background-color: #DADAD9;
 }
 
-.swiper-2-slid-1-colors .color-box-420-3{
+.swiper-2-slid-1-colors .color-box-420-3 {
     background-color: #D7D5CB;
 }
 
-.swiper-2-slid-1-colors .color-box-420-4{
+.swiper-2-slid-1-colors .color-box-420-4 {
     background-color: #375033;
 }
 
-.swiper-2-slid-1-colors .color-box-420-5{
+.swiper-2-slid-1-colors .color-box-420-5 {
     background-color: #2E2E2C;
+}
+
+.swiper-pagination {
+    position: initial;
 }
 
 /* responsive */
@@ -382,54 +396,54 @@ nav ul li a{
 
     /* page-1 */
 
-    .center{
+    .center {
         flex-direction: column;
         width: 100%;
     }
 
-    .center-text{
+    .center-text {
         width: 100%;
     }
 
-    .center-text .XL{
+    .center-text .XL {
         display: none;
     }
-    
-    .center-text .intro-text{
+
+    .center-text .intro-text {
         justify-content: flex-start;
         padding: 12px;
     }
 
-    .center-text .intro-text p{
+    .center-text .intro-text p {
         font-size: 13vw;
     }
 
-    .center-text .info-text{
+    .center-text .info-text {
         justify-content: flex-start;
         padding: 12px;
         margin-bottom: 12px;
     }
 
-    .center-text .info-text p{
+    .center-text .info-text p {
         font-size: 6.4vw;
     }
 
-    .center .center-image{
+    .center .center-image {
         width: 100%;
         padding: 0vw;
     }
 
-    .center .center-image img{
+    .center .center-image img {
         border-radius: 2vw;
     }
 
-    .center .button{
+    .center .button {
         position: absolute;
         top: 83vw;
         padding: 2vw;
     }
 
-    .center .button button{
+    .center .button button {
         padding: 3vw 7vw;
         border-radius: 2vw;
         font-size: 3vw;
@@ -437,12 +451,12 @@ nav ul li a{
     }
 
     /* page-2 */
-    
-    .page-2{
+
+    .page-2 {
         height: auto;
     }
 
-    .page-2 .main-text span{
+    .page-2 .main-text span {
         font-size: 8vw;
         line-height: 8vw;
     }
@@ -466,7 +480,7 @@ nav ul li a{
 
     .page-2 .where-to-build :nth-child(1) {
         font-size: 3vw;
-        
+
     }
 
     .page-2 .where-to-build :nth-child(2) {
@@ -476,15 +490,22 @@ nav ul li a{
 
     /* page-3 */
 
-    .swiper-slid-1 img {
+    .page-3 .swiper-slide img {
         width: 90%;
-        height: 60vh;
-        border-radius: 2vw;
-      }
+        height: 40vh;
+        border-radius: 1vw;
+    }
+
+    .second-swiper-slid img{
+        position: absolute;
+        top: 0;
+        height: 20vw;
+        border-radius: 1vw;
+    }
 
     /* page-4 */
 
-    .page-4{
+    .page-4 {
         padding: 10vw 0vw;
     }
 
@@ -511,10 +532,13 @@ nav ul li a{
         gap: 3vw;
     }
 
-    .samara-boxes .box-1, .box-2{
+    .samara-boxes .box-1,
+    .box-2 {
         margin: auto;
     }
-    .samara-boxes .box-1 img, .box-2 video{
+
+    .samara-boxes .box-1 img,
+    .box-2 video {
         width: 95vw;
         height: 50vw;
         object-fit: cover;
@@ -542,8 +566,18 @@ nav ul li a{
 
     /* page-5 */
 
-    .second-swiper-wrapper .second-swiper-slide{
+    .page-5 {
+        height: auto;
+    }
+
+    .second-swiper-wrapper .second-swiper-slide {
         height: 15vh;
+    }
+
+    .second-swiper-slide img {
+        height: 20vw;
+        position: absolute;
+        top: 0;
     }
 
     .swiper-2-slid-1-colors {
@@ -554,4 +588,4 @@ nav ul li a{
         height: 5vw;
         width: 5vw;
     }
-  }
+}

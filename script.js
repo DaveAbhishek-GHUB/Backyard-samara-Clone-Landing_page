@@ -22,7 +22,7 @@ var swiper = new Swiper(".mySwiper", {
 
 
 // 2nd swiper
-var swiper2 = new Swiper(".swiper", {
+var swiper2 = new Swiper(".second-swiper", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -30,52 +30,77 @@ var swiper2 = new Swiper(".swiper", {
 });
 
 
-//420sqft
-
 document.addEventListener("DOMContentLoaded", function() {
-  let maxZIndex = 10; // Define the maximum z-index value
-  let previousElement = null; // To store the previously clicked element
+  let maxZIndex = 10;
+  let previousElements = [];
 
-  // Map of color-box classes to their corresponding image IDs
   const colorBoxMap = {
-      "color-box-420-1": "white-420sqft",
-      "color-box-420-2": "driftwood-420sqft",
-      "color-box-420-3": "parchment-420sqft",
-      "color-box-420-4": "evergreen-420sqft",
-      "color-box-420-5": "darkbronze-420sqft"
-  };
+    "color-box-420-1": ["white-420sqft", "540-bonewhite", "690-bonewhite", "800-bonewhite"],
+    "color-box-420-2": ["driftwood-420sqft", "540-driftwood", "690-driftwood", "800-driftwood"],
+    "color-box-420-3": ["parchment-420sqft", "540-parchment", "690-parchment", "800-parchment"],
+    "color-box-420-4": ["evergreen-420sqft", "540-evergreen", "690-evergreen", "800-evergreen"],
+    "color-box-420-5": ["darkbronze-420sqft", "540-darkbronze", "690-darkbronze", "800-darkbronze"]
+};
 
-  // Iterate through each entry in the colorBoxMap
-  for (const [colorBoxClass, imgId] of Object.entries(colorBoxMap)) {
-      // Select the color box element
+  function setZIndexForIds(ids) {
+      previousElements.forEach(element => {
+          element.style.zIndex = "";
+      });
+
+      previousElements = [];
+
+      ids.forEach(imgId => {
+          const targetElement = document.getElementById(imgId);
+          if (targetElement) {
+              targetElement.style.zIndex = maxZIndex;
+              previousElements.push(targetElement);
+          }
+      });
+  }
+
+  for (const [colorBoxClass, imgIds] of Object.entries(colorBoxMap)) {
       const colorBox = document.querySelector(`.${colorBoxClass}`);
       
-      // Add a click event listener to the selected element
       colorBox.addEventListener("click", function() {
-          // Select the target image element using the ID from the map
-          const targetElement = document.getElementById(imgId);
-          
-          // Reset the z-index of the previously clicked element
-          if (previousElement) {
-              previousElement.style.zIndex = "";
-          }
+          setZIndexForIds(imgIds);
+      });
+  }
 
-          // Set the z-index of the current element to max
-          targetElement.style.zIndex = maxZIndex;
+  const nextButton = document.querySelector('.swiper-button-next');
+  const prevButton = document.querySelector('.swiper-button-prev');
 
-          // Update the previously clicked element
-          previousElement = targetElement;
+  if (nextButton) {
+      nextButton.addEventListener("click", function() {
+          setZIndexForIds(colorBoxMap["color-box-420-1"]);
+      });
+  }
+
+  if (prevButton) {
+      prevButton.addEventListener("click", function() {
+          setZIndexForIds(colorBoxMap["color-box-420-1"]);
       });
   }
 });
 
-const colorbox420_1 = document.querySelector(".color-box-420-1");
-const bonewhite420 = colorbox420_1.querySelector("p");
+// Define an array of color-box classes and their corresponding p elements
+const colorBoxes = [
+  { box: "color-box-420-1", text: "p" },
+  { box: "color-box-420-2", text: "p" },
+  { box: "color-box-420-3", text: "p" },
+  { box: "color-box-420-4", text: "p" },
+  { box: "color-box-420-5", text: "p" }
+];
 
-colorbox420_1.addEventListener("mouseenter", function() {
-    bonewhite420.style.display = "block";
-});
+// Iterate through each color box and add event listeners
+colorBoxes.forEach(({ box, text }) => {
+  const colorBox = document.querySelector(`.${box}`);
+  const textElement = colorBox.querySelector(text);
 
-colorbox420_1.addEventListener("mouseleave", function() {
-    bonewhite420.style.display = "none";
+  colorBox.addEventListener("mouseenter", function() {
+      textElement.style.display = "block";
+  });
+
+  colorBox.addEventListener("mouseleave", function() {
+      textElement.style.display = "none";
+  });
 });
