@@ -321,6 +321,7 @@ nav ul li a {
 .page-5 {
     height: auto;
     width: 100%;
+    padding: 0vw 0vw 8vw 0vw;
 }
 
 .second-swiper {
@@ -414,6 +415,71 @@ nav ul li a {
 .sec-swiper-bottom-text .bottom-text-midline{
     width: 0.1vw;
     background-color: black;
+}
+
+.HOR-line{
+    height: 0.1vw;
+    width: 50%;
+    background-color: #5e595946;
+    margin: 2vw auto;
+}
+
+.page-5 .see-more{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5vw;
+}
+
+.page-5 .see-more #see-more-para{
+    color: #9b9b97;
+}
+
+.page-5 .see-more #see-more-para span{
+    color: black;
+    font-weight: 700;
+}
+
+.page-5 .see-more-buttons{
+    display: flex;
+    gap: 5vw;
+}
+
+.page-5 .seemore-btn-2{
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+}
+
+.page-5 .seemore-btn-2 img{
+    height: 3vw;
+    border-radius: 5px;
+}
+
+.see-more-buttons .seemore-btn-1 :nth-child(1){
+    color: #9b9b97;
+}
+
+.see-more-buttons .seemore-btn-1 :nth-child(2){
+    color: #33ABF9;
+}
+
+.seemore-btn-2 p{
+    color: #33ABF9;
+}
+
+.seemore-btn-1{
+    padding: 1vw 2vw;
+    background-color: #605d5d0a;
+    border-radius: 1.5vw;
+}
+
+.seemore-btn-2{
+    padding: 1vw 2vw;
+    background-color: #605d5d0a;
+    border-radius: 1.5vw;
 }
 /* responsive */
 
@@ -627,10 +693,31 @@ nav ul li a {
 
     .sec-swiper-text :nth-child(1) {
         font-size: 4.5vw;
-      }
+    }
 
-      .sec-swiper-text :nth-child(2) {
+    .sec-swiper-text :nth-child(2) {
         font-size: 3.5vw;
-      }
+    }
 
+    .page-5 .see-more #see-more-para {
+        text-align: center;
+        font-size: 5vw;
+        padding: 12px;
+    }
+
+    .page-5 .see-more-buttons {
+        flex-direction: column;
+    }
+
+    .page-5 .seemore-btn-2 img {
+        height: 12vw;
+    }
+
+    .seemore-btn-1{
+        padding: 12px;
+    }
+
+    .seemore-btn-2{
+        padding: 12px;
+    }
 }
