@@ -481,6 +481,137 @@ nav ul li a {
     background-color: #605d5d0a;
     border-radius: 1.5vw;
 }
+
+/* page-6 */
+
+.page-6{
+    height: auto;
+    width: 100%;
+    padding: 1vw 2vw;
+}
+
+.getBackyard{
+    display: flex;
+    flex-direction: column;
+}
+
+.all-steps{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 2vw;
+}
+
+.FTsteps-text, .LTsteps-text{
+    width: 40%;
+    padding: 4vw 1vw;
+}
+
+.steps{
+    width: 35%;
+}
+
+.FTsteps .FTsteps-text p{
+    font-size: 2.5vw;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+.FTsteps .FTsteps-text :nth-child(2){
+    color: #0009;
+}
+
+.step-name{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.step-name .step-name-01, .step-name-04{
+    display: inline-block;
+    padding: 1vw;
+    background-color: black;
+    color: white;
+    border-radius: 1vw;
+    font-weight: 700;
+}
+
+.step-name-02{
+    display: inline-block;
+    padding: 1vw;
+    color: #0009;
+    border-radius: 1vw;
+    font-weight: 700;
+    border: 1px solid #0009;
+}
+
+.step-name-after-line{
+    width: 100%;
+    height: 0.1vw;
+    background-color: #6a67673b;
+}
+
+.step-1-inner-text :nth-child(1){
+    font-size: 2vw;
+}
+
+.step-1-inner-text :nth-child(2){
+    font-size: 1.2vw;
+    color: #0009;
+}
+
+.step-stuff img{
+    width: 100%;
+    border-radius: 1vw;
+    margin: 1vw auto;
+}
+
+.step-stuff video{
+    width: 100%;
+    border-radius: 1vw;
+    margin: 1vw auto;
+}
+
+.LTstep-text-1 p{
+    font-size: 1.8vw;
+}
+
+.LTstep-text-1 :nth-child(2){
+    color: #0009;
+}
+
+.LTsteps-button{
+    margin: 4vw auto;
+}
+
+.LTsteps-button :nth-child(1){
+    font-size: 1vw;
+    width: 10vw;
+    padding: 1vw;
+    margin: 1vw;
+    background-color: #7170700a;
+    border-radius: .5vw;
+    color: #33ABF9;
+    text-align: center;
+}
+
+.LTsteps-button :nth-child(2){
+    font-size: 1vw;
+    width: 10vw;
+    padding: 1vw;
+    margin: 1vw;
+    background-color: #33ABF9;
+    border-radius: .5vw;
+    color: white;
+    text-align: center;
+}
+
+.first-two-step-wrapper, .last-steps-wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+}
+
 /* responsive */
 
 @media (max-width: 768px) {
@@ -719,5 +850,77 @@ nav ul li a {
 
     .seemore-btn-2{
         padding: 12px;
+    }
+
+    .color-boxes p{
+        font-size: 0vw;
+    }
+
+    /* page-6 */
+
+    .FTsteps{
+        flex-direction: column;
+    }
+
+    .FTsteps-text{
+        width: 100%;
+    }
+      
+    .FTsteps .FTsteps-text p {
+        font-size: 5vw;
+    }
+
+    .first-two-step-wrapper{
+        display: flex;
+        justify-content: center;
+        margin: 5vw auto;   
+    }
+
+    .steps {
+        width: 40%;
+    }
+
+    .step-1-inner-text :nth-child(1) {
+        font-size: 5vw;
+    }
+
+    .step-1-inner-text :nth-child(2) {
+        font-size: 3vw;
+    }
+
+    .LTsteps {
+        flex-direction: column;
+    }
+
+    .LTstep-text-1 :nth-child(1){
+            font-size: 4vw;
+    }
+
+    .LTsteps-text {
+        width: 100%;
+    }
+
+    .LTstep-text-1 p {
+        font-size: 3.8vw;
+    }
+
+    .LTsteps-button {
+        display: flex;
+    }
+
+    .LTsteps-button :nth-child(1) {
+        font-size: 3vw;
+        width: 25vw;
+        padding: 3vw;
+    }
+
+    .LTsteps-button :nth-child(2) {
+        font-size: 3vw;
+        width: 25vw;
+        padding: 3vw;
+    }
+    
+    .step-1-photo{
+        margin-top: 4.2vw;
     }
 }
