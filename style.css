@@ -612,6 +612,137 @@ nav ul li a {
     gap: 3vw;
 }
 
+/* page-7 */
+
+.living-room{
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+.living-room img{
+    width: 100%;
+    border-radius: 1vw;
+}
+
+.living-room p{
+    position: absolute;
+    color: white;
+    font-size: 4vw;
+    top: 6vw;
+    left: 12vw;
+}
+
+.studio-tour{
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    padding: 10px;
+    position: relative;
+}   
+
+.studio-tour .studio-tour-01 img{
+    height: 40vw;
+    width: 45vw;
+    border-radius: 1vw;
+    object-fit: cover;
+}
+
+.studio-tour-01-text{
+    width: 45vw;
+}
+
+.studio-tour .studio-tour-02 img{
+    height: 40vw;
+    width: 45vw;
+    border-radius: 1vw;
+    object-fit: cover;
+}
+
+.studio-tour-02-text{
+    width: 45vw;
+}
+
+.studio-tour-01-text :nth-child(1){
+    font-size: 2vw;
+}
+
+.studio-tour-01-text :nth-child(2){
+    font-size: 1.2vw;
+    color: #0009;
+}
+
+.studio-tour-02-text :nth-child(1){
+    font-size: 2vw;
+}
+
+.studio-tour-02-text :nth-child(2){
+    font-size: 1.2vw;
+    color: #0009;
+}
+
+.page-7-section-2{
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.page-7-inner-div{
+    height: 90dvh;
+    width: 80%;
+}
+
+.page-7-inner-div #page-7-BGimg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1vw;
+    filter: blur(0.8px);
+}
+
+.page-7-swiper {
+    width: 25vw;
+    height: 35vw;
+    background-color: white;
+    border-radius: 1vw;
+}
+
+.page-7-swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-7-swiper-slide img {
+    height: 45%;
+    object-fit: cover;
+}
+
+.page-7-inner-stuff{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 8vw;
+    left: 0;
+    width: 100%;
+    gap: 8vw;
+}
+
+.swiper-pagination{
+    position: absolute;
+}
+
+.page-7-section-2 .inner-div-text p{
+    color: white;
+    font-size: 3vw;
+}
 /* responsive */
 
 @media (max-width: 768px) {
@@ -922,5 +1053,46 @@ nav ul li a {
     
     .step-1-photo{
         margin-top: 4.2vw;
+    }
+
+    /* page-7 */
+
+    .studio-tour-01-text :nth-child(1) {
+        font-size: 3.5vw;
+    }
+
+      .studio-tour-01-text :nth-child(2) {
+        font-size: 2.2vw;
+    }
+
+      .studio-tour-02-text :nth-child(1) {
+        font-size: 3.5vw;
+    }
+
+      .studio-tour-02-text :nth-child(2) {
+        font-size: 2.2vw;
+    }
+
+    .page-7-section-2 {
+        height: 100dvh;
+    }
+
+    .page-7-inner-div #page-7-BGimg {
+        height: 60vh;
+        filter: blur(0px);
+    }
+
+    .page-7-inner-stuff {
+        top: 18vw;
+        flex-direction: column;
+    }
+
+    .page-7-section-2 .inner-div-text p { 
+        font-size: 5vw;
+    }
+
+    .page-7-swiper {
+        width: 60vw;
+        height: 60vw;
     }
 }

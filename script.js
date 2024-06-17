@@ -104,3 +104,13 @@ colorBoxes.forEach(({ box, text }) => {
       textElement.style.display = "none";
   });
 });
+
+
+// page-7-swiper
+
+var swiper = new Swiper(".page-7-swiper", {
+  pagination: {
+      el: ".swiper-pagination",
+      dynamicBullets: true,
+  },
+});
