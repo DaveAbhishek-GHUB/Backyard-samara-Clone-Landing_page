@@ -965,7 +965,7 @@ nav ul li a {
 /* footer */
 
 .footer{
-    height:60dvh;
+    height:70dvh;
     width: 100%;
     display: flex;
 }
@@ -1017,7 +1017,7 @@ nav ul li a {
 }
 
 #CR{
-    padding: 2vw;
+    padding: 2vw 23vw;
 }
 /* responsive */
 
@@ -1441,6 +1441,10 @@ nav ul li a {
 
     /* page-8 */
 
+    .page-8{
+        height: 450vw;
+    }
+
     .page-8-image-section-1 {
         height: 70dvh;
     }
@@ -1509,6 +1513,45 @@ nav ul li a {
     /* footer */
 
     .footer{
+        flex-direction: column;
+    }
+
+    .footer div{
+        width: 100%;
+        margin: 4vw 0vw;
+    }
+
+    .footer-samara p, .footer-backyard p, .social p{
+        font-size: 5vw;
+    }
+
+
+    .footer-section-02{
+        flex-direction: column;
+    }
+
+    .haveQuestinos p, .get-updates p {
+        font-size: 4vw;
+    }
+
+    .haveQuestinos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .haveQuestinos h4 {
+        padding: 3vw;
+        width: 29vw;
+        border-radius: 5vw;
+        font-size: 4vw;
+    }
+
+    .get-updates{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
     }
 }
